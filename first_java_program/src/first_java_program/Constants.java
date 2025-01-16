@@ -6,7 +6,7 @@ package first_java_program;
  
 public class Constants {
 
-	public static void main(Stringp[ args]) {
+	public static void main(String[] args) {
 		
 		//상수명의 규칙 : 모두 대문자로 작성하고 단어와 단어는 _(언더바)로 구분한다.
 		final int SPEED_OF_LIGHT = 299_792_458;
