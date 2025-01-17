@@ -52,5 +52,6 @@ public class IfStatement {
 		}
 		
 		System.out.println("내가 가진 돈 " + myWallet);
+		
 	}
 }
