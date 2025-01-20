@@ -1,7 +1,10 @@
 package first_java_program;
 
+import java.util.Scanner;
+
 public class UpDownGame {
 	
+			/*
 			double randomNumber = Math.random(); 
 			int quiz = (int) (randomNumber * 100); 
 			// int myAnswer = 60;
@@ -22,5 +25,6 @@ public class UpDownGame {
 			System.out.println("DOWN!");
 			}
 			System.out.println("정답은 " + quiz + "입니다");
+			*/
 
 }

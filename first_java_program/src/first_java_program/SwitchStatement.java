@@ -20,7 +20,7 @@ public class SwitchStatement {
 			System.out.println("3. 수납장 안에 있는 냄비의 손잡이를 잡고 꺼낸다.");
 		case 4:
 			int randomNumber = (int) (Math.random() * 10);
-			if ( randomNumber & 2 == 0 ) {
+			if ( randomNumber % 2 == 0 ) {
 				System.out.println("4. 냄비가 깨끗하다면 가스레인지 위에 올린다.");
 			}
 			else if ( randomNumber == 9 ) {
@@ -53,6 +53,59 @@ public class SwitchStatement {
 		case 15:
 			System.out.println("15. 수저를 찾는다.");
 		}
+		
+		
+		// Switch를 이용하여 변수에 값을 할당한다
+		
+		// ---------------Java 13 switch---------------
+		// 회원가입을 받을 떄, 사용자가 등록할 수 없는 아이디 목록 (Blcak List)
+		// 관리자들이 사용하는 아이디
+		// admin, root, superuser, administrator
+		// 운영자들이 사용하는 아이디
+		// master, operator, system, sysopr
+		
+		String memberId1 = "admin";
+		String memberGrade1 = switch (memberId1) {
+			case "admin":
+			case "root":
+			case "superuser":
+			case "administrator":
+				yield "관리자";
+			case "master":
+			case "operator":
+			case "system":
+			case "sysopr":
+				yield "운영자";
+			default:
+				yield "일반사용자";
+		};
+		
+		System.out.println(memberId1 + "은(는) " + memberGrade1 + "입니다.");
+		
+		// ---------------Java 14 switch---------------
+		
+		String memberId2 = "superuser";
+		String memberGrade2 = switch (memberId2) {
+			case "admin", "root", "superuser", "administrator":
+				yield "관리자";
+			case "master", "operator", "system", "sysopr":
+				yield "운영자";
+			default:
+				yield "일반사용자";
+		};
+		
+		System.out.println(memberId2 + "은(는) " + memberGrade2 + "입니다.");
+		
+		// ----------yield 간소화->배열,자료구조->한 줄로 표현 가능----------
+		
+		String memberId3 = "sysopr";
+		String memberGrade3 = switch (memberId3) {
+			case "admin", "root", "superuser", "administrator" -> "관리자";
+			case "master", "operator", "system", "sysopr" -> "운영자";
+			default -> "일반사용자";
+		};
+		
+		System.out.println(memberId3 + "은(는) " + memberGrade3 + "입니다.");
 	}
 
 }
