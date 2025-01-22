@@ -6,6 +6,10 @@ public class MethodExam {
 		return (minutes*60)+seconds;
 	}
 	
+	public static int getSeconds2(int processTime) {
+		return (processTime/60)+(processTime%60);
+	}
+	
 	public static void main(String[] args) {
 		int seconds = getSeconds(5,50);
 		System.out.println(seconds);
@@ -15,7 +19,4 @@ public class MethodExam {
 		System.out.println(seconds2);
 	}
 
-}
-public static int getSeconds2(int processTime) {
-	return (processTime/60)+(processTime%60);
 }

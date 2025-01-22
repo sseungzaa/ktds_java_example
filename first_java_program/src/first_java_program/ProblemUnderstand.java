@@ -1,11 +1,11 @@
 package first_java_program;
 
 public class ProblemUnderstand {
-	public static int getFlightFare(int age) {
-		return 
-	}
+	// public static int getFlightFare(int age) {
+		// return 
+	// }
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		int money = 1000000;
 		int father = 40;
 		int mother = 36;
@@ -19,5 +19,5 @@ public class ProblemUnderstand {
 		else {
 			System.out.println("다음에 가자");
 		}
-	}
+	}*/
 }

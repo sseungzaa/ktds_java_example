@@ -52,8 +52,8 @@ public class MethodProblem {
 		}
 	}
 	
-	public static int printProblem5(int minutes,int seconds) {
-		return minutes
+	// public static int printProblem5(int minutes,int seconds) {
+		
 				
 				
 				
