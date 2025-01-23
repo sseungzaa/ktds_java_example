@@ -10,9 +10,9 @@ public class School {
 		student.csharp = (int) (Math.random() * 101);
 		
 		int sum = student.getSumAllScores();
-		double average = student.getAverage();
+   		double average = student.getAverage();
 		double courseCredit = student.getCourseCredit();
-		String grade = student.getABCDF();
+ 		String grade = student.getABCDF();
 		
 		System.out.println("총점은 " + sum);
 		System.out.println("평균은 " + average);

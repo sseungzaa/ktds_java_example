@@ -25,7 +25,7 @@ public class Student {
 	
 	public double getCourseCredit() {
 		//double courseCredit = (getAverage() - 55) / 10.0;
-		int courseCredit = (int) (((getAverage() - 55) / 10.0) * 100);
+		int courseCredit = (int) ((getAverage() - 55) / 10.0 * 100);
 		return courseCredit / 100.0;
 	}
 	
