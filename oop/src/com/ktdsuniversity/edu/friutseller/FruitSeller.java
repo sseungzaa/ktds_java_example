@@ -6,6 +6,13 @@ public class FruitSeller {
 	private int money;
 	private int fruitstock;
 	
+	// 생성자 오버로딩 파트
+	public FruitSeller() {
+		this.money = 10000;
+		this.fruitstock = 4;
+	}
+	// 생성자 오버로딩 파트
+	
 	public FruitSeller(int money, int fruitStock) {
 		this.money = money;
 		this.fruitstock = fruitStock;
@@ -38,5 +45,18 @@ public class FruitSeller {
 			this.money += quantity * FRUIT_PRICE;
 		}
 	}
+	
+	// 메소드 오버로딩 파트
+	public void sell() {
+		this.sell(1);
+		
+		/*
+		if (this.fruitstock >= 1) {
+			this.fruitstock -= 1;
+			this.money += 1 * FRUIT_PRICE;
+		}
+		*/
+	}
+	// 메소드 오버로딩 파트
 	
 }

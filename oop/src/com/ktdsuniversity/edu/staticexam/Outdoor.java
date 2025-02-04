@@ -1,7 +1,6 @@
-package com.ktdsuniversity.edu.comiccafe;
+package com.ktdsuniversity.edu.staticexam;
 
 public class Outdoor {
-	
 	public static void main(String[] args) {
 		ComicBook comic1 = new ComicBook("1권",false);
 		ComicBook comic2 = new ComicBook("2권",true);

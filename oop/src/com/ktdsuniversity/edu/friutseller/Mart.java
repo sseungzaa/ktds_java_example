@@ -6,6 +6,8 @@ public class Mart {
 		System.out.println("판매자 소지금: " + coupang.getMoney()); // 100
 		System.out.println("과일 재고: " + coupang.getFruitStock()); // 1000
 		
+		FruitSeller fs = new FruitSeller();
+		
 		coupang.sell(10); // money,fruitStock이 변경됨
 		coupang.sell(5); // money,fruitStock이 변경됨
 		coupang.sell(7); // money,fruitStock이 변경됨
