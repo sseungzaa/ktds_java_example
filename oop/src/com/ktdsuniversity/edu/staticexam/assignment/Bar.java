@@ -17,5 +17,77 @@ package com.ktdsuniversity.edu.staticexam.assignment;
 
 public class Bar {
 	
+	// 바의 금고 멤버변수
+	private int safe;
+	
+	// 바 생성자 (바의 금고의 처음 금액은 0으로 설정)
+	public Bar() {
+		this.safe = 0;
+	}
+	
+	// 주류와 음료의 가격 final static
+	public final static int LIQUOR_PRICE = 5000;
+	public final static int DRINK_PRICE = 4000;
+	
+	// 주류를 판매하는 기능 메소드
+	public void sellLiquor(Guest guest) {
+		
+		// 주류를 판매할 수 있는 경우
+		if(canSellLiquor(guest)) {
+			guest.setMoney(guest.getMoney() - LIQUOR_PRICE);
+			guest.setDrunk(guest.getDrunk() + 0.5);
+			this.safe += LIQUOR_PRICE;
+			System.out.println("주류를 판매했습니다.");
+			System.out.println("바의 금고 현황: " + this.safe);
+		}
+		
+		// 주류를 판매할 수 없는 경우
+		else {
+			// 19세 미만
+			if(guest.getAge() < 19) {
+				System.out.println("미성년자에게는 주류를 판매할 수 없습니다.");
+			}
+			// 돈 부족
+			if(guest.getMoney() < LIQUOR_PRICE) {
+				System.out.println("돈이 부족하여 주류를 구매할 수 없습니다.");
+			}
+			// 만취
+			if(guest.getDrunk() >= 10.0) {
+				System.out.println("만취한 사람에게는 더 이상 주류를 판매할 수 없습니다.");
+			}
+		}
+	}
+	
+	public void sellDrink(Guest guest) {
+		// 음료를 판매할 수 있는 경우
+		if(canSellDrink(guest)) {
+			guest.setMoney(guest.getMoney() - DRINK_PRICE);
+			guest.setFull(guest.getFull() + 0.2);
+			this.safe += DRINK_PRICE;
+			System.out.println("음료를 판매했습니다.");
+			System.out.println("바의 금고 현황: " + this.safe);
+		}
+		// 음료를 판매할 수 없는 경우
+		else {
+			// 돈 부족
+			if(guest.getMoney() < DRINK_PRICE) {
+				System.out.println("돈이 부족하여 음료를 구매할 수 없습니다.");
+			}
+			// 배부름
+			if(guest.getFull() >= 20.0) {
+				System.out.println("이미 배가 완전히 부른 사람에게는 더 이상 음료를 판매할 수 없습니다.");
+			}
+		}
+	}
+	
+	// static - 취한 정도 10 이상이면 만취
+	public static boolean canSellLiquor(Guest guest) {
+		return guest.getDrunk() < 10.0 && guest.getAge() >= 19;
+	}
+	
+	// static - 배부른 정도 20 이상이면 완전히 배부름
+	public static boolean canSellDrink(Guest guest) {
+		return guest.getFull() < 20.0;
+	}
 
 }

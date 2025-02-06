@@ -1,4 +1,4 @@
-package com.ktdsuniversity.edu.staticexam;
+package com.ktdsuniversity.edu.array.comiccafe;
 
 public class ComicBook {
 	
@@ -23,13 +23,8 @@ public class ComicBook {
 	 * 이미 대여 중인 책이면? pass
 	 * @param rentBook 책이 대여 중인지 아닌지 알려줌
 	 */
-	public void rent(boolean rentBook) {
+	public void setRentBook(boolean rentBook) {
 		this.rentBook = rentBook;
 	}
-	
-	private String name;
-	private boolean isRental;
-
-}
 
 }

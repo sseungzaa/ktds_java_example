@@ -204,21 +204,8 @@ public class StringExam {
 	}
 	
 	public static void main(String[] args) {
-		String path = "C:\\dev_program\\eclipse\\eclipse.exe";
-		System.out.println(path);
 		
-		// lastIndexOf, substring을 이용해 "eclipse.exe"만 출력
-		int letterECLastIndex = path.lastIndexOf("ec");
-		// System.out.println(letterECLastIndex);
-		String word1 = path.substring(letterECLastIndex);
-		System.out.println(word1);
-		
-		// "eclipse.exe"에서 indexOf, substring을 이용해 "eclipse"만 출력
-		
-		int letterDotIndex = word1.indexOf(".");
-		// System.out.println(letterDotIndex);
-		String word2 = word1.substring(0, letterDotIndex);
-		System.out.println(word2);
+		StringExam.contains();
 		
 	}
 

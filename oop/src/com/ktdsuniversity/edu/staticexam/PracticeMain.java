@@ -19,7 +19,20 @@ package com.ktdsuniversity.edu.staticexam;
 
 public class PracticeMain {
 	public static void main(String[] args) {
+		boolean isValidAge = Practice.isValidAge(10, 0, 101);
+		System.out.println(isValidAge); // true
 		
+		isValidAge = Practice.isValidAge(200, 0, 101);
+		System.out.println(isValidAge); // false
+		
+		isValidAge = Practice.isValidAge(101, 0, 101);
+		System.out.println(isValidAge); // false
+		
+		double courseCredit = Practice.getCourseCredit(85.19);
+		System.out.println(courseCredit); // 3.0
+		
+		courseCredit = Practice.getCourseCredit(39.11);
+		System.out.println(courseCredit); // 1.0
 	}
-
+	
 }
