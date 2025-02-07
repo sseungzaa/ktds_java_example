@@ -48,11 +48,11 @@ public class Bar {
 				System.out.println("미성년자에게는 주류를 판매할 수 없습니다.");
 			}
 			// 돈 부족
-			if(guest.getMoney() < LIQUOR_PRICE) {
+			else if(guest.getMoney() < LIQUOR_PRICE) {
 				System.out.println("돈이 부족하여 주류를 구매할 수 없습니다.");
 			}
 			// 만취
-			if(guest.getDrunk() >= 10.0) {
+			else if(guest.getDrunk() >= 10.0) {
 				System.out.println("만취한 사람에게는 더 이상 주류를 판매할 수 없습니다.");
 			}
 		}
@@ -74,7 +74,7 @@ public class Bar {
 				System.out.println("돈이 부족하여 음료를 구매할 수 없습니다.");
 			}
 			// 배부름
-			if(guest.getFull() >= 20.0) {
+			else if(guest.getFull() >= 20.0) {
 				System.out.println("이미 배가 완전히 부른 사람에게는 더 이상 음료를 판매할 수 없습니다.");
 			}
 		}
