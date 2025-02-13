@@ -14,10 +14,12 @@ public class ContactApp implements ContactAppsInterface {
 	
 	// contactMaxCount: contacts배열에 들어갈 수 있는 최대 연락처 개수 (직접 설정)
 	public ContactApp(int contactMaxCount) {
-		if (contactMaxCount <= 0) {
-			contactMaxCount = 10;
+		if (contactMaxCount > 0) {
+			this.contacts = new Contact[contactMaxCount];
 		}
-		this.contacts = new Contact[contactMaxCount];
+		else {
+			this.contacts = new Contact[10];
+		}
 	}
 	
 	@Override
