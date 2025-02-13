@@ -13,7 +13,7 @@ public class Ahri implements Unit {
 //	private float attackSpeed;
 	
 	public Ahri (String playerName) {
-		this.characterName = "아리(B)";
+		this.characterName = "Ahri(B)";
 		this.playerName = playerName;
 		this.level = 1;
 		this.health = 100;

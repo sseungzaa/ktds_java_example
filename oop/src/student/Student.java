@@ -9,6 +9,15 @@ public class Student {
 	int cpp;
 	int csharp;
 	
+	// 여기서부터 제네릭 강의 때 추가한 내용
+	public Student(int java, int python, int cpp, int csharp) {
+		this.java = java;
+		this.python = python;
+		this.cpp = cpp;
+		this.csharp = csharp;
+	}
+	// 여기까지 제네릭 강의 때 추가한 내용
+	
 	
 	public int getSumAllScores() {
 		return java + python + cpp + csharp;

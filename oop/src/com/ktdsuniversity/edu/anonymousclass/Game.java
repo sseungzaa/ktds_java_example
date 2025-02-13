@@ -14,7 +14,7 @@ public class Game {
 		 */
 		Unit other = new Unit() {
 			
-			private String characterName = "아리(R)";
+			private String characterName = "Ahri(R)";
 			private String playerName = "Chovy";
 			private int level = 1;
 			private int health = 100;

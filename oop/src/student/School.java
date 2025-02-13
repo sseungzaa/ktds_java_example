@@ -3,7 +3,10 @@ package student;
 public class School {
 	public static void main(String[] args) {
 		
-		Student student = new Student();
+		
+//		원래 ↓ 이건데 제네릭 강의 때 생기게 되는 에러 고칠려고 (0, 0, 0, 0) 붙여놓음
+//		Student student = new Student();
+		Student student = new Student(0, 0, 0, 0);
 		student.java = (int) (Math.random() * 101);
 		student.python = (int) (Math.random() * 101);
 		student.cpp = (int) (Math.random() * 101);
