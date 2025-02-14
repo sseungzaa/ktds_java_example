@@ -17,8 +17,8 @@ public class Student {
 		this.csharp = csharp;
 	}
 	// 여기까지 제네릭 강의 때 추가한 내용
-	
-	
+
+
 	public int getSumAllScores() {
 		return java + python + cpp + csharp;
 	}

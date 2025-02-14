@@ -13,7 +13,8 @@ import java.util.List;
 public class FileReadExam {
 	
 	public static void loadProducts() {
-		File targetFile = new File("/Users/211-11/Desktop/FileIOExam", "products.txt");
+//		File targetFile = new File("/Users/211-11/Desktop/FileIOExam", "products.txt");
+		File targetFile = new File("/Users/USER/Downloads/ktds_java_example-master/FileIOExam", "products.txt");
 		
 		List<Product> productList = new ArrayList<>();
 		
