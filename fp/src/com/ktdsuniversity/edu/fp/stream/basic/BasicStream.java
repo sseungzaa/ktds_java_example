@@ -41,10 +41,31 @@ public class BasicStream {
 		}
 	}
 	
+	
+	
+	public void run() {
+		System.out.println("=".repeat(30));
+		// Stream은 최종 연산 없이는 동작되지 않음
+		DishList.get()
+				.stream()
+				.peek(dish -> System.out.println("최종 연산 없는 스트림: " + dish))
+				.filter(dish -> dish.getIsVegetarian())
+				;
+		
+		long count = DishList.get()
+							 .stream()
+							 .peek(dish -> System.out.println("최종 연산 없는 스트림: " + dish))
+							 .filter(dish -> dish.getIsVegetarian())
+							 .count() // 최종 연산 long 반환
+							 ;
+		System.out.println(count);
+	}
+	
 	public static void main(String[] args) {
 		
 		BasicStream bs = new BasicStream();
 		bs.printMenuStream();
 		bs.printMenuNotStream();
+		bs.run();
 	}
 }
