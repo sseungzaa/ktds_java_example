@@ -8,9 +8,9 @@ public class DishStream {
 		// Stream => 내부 반복자=직접 반복을 시키지 않음 => 스트림 내부에서 반복을 진행함
 		DishList.get() // List<Dish>
 				.stream() // Stream<Dish>
-//				.peek((eachDish) -> System.out.println("Before filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian())) // Stream<Dish> // 지금 반복 중인 것이 무엇인지 관찰하는 디버깅용 함수
+//					.peek((eachDish) -> System.out.println("Before filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian())) // Stream<Dish> // 지금 반복 중인 것이 무엇인지 관찰하는 디버깅용 함수
 				.filter((eachDish) -> eachDish.getIsVegetarian()) // Stream<Dish>
-//				.peek((eachDish) -> System.out.println("After filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian())) // peek은 디버깅용이라 디버깅만 해보고 지움
+//					.peek((eachDish) -> System.out.println("After filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian())) // peek은 디버깅용이라 디버깅만 해보고 지움
 				.forEach((eachDish) -> System.out.println(eachDish)); // void
 		
 		/* 내부 반복
@@ -47,11 +47,11 @@ public class DishStream {
 	public void printLowCaloryVegeterian() {
 		DishList.get() // List<Dish>
 				.stream() // Stream<Dish>
-//				.peek((eachDish) -> System.out.println("Before filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
+//					.peek((eachDish) -> System.out.println("Before filter: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
 				.filter((eachDish) -> eachDish.getIsVegetarian()) // Stream<Dish>
-//				.peek((eachDish) -> System.out.println("After filter1: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
+//					.peek((eachDish) -> System.out.println("After filter1: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
 				.filter((eachDish) -> eachDish.getCalories() < 300) // Stream<Dish> 300칼로리 미만의 음식만 걸러내기
-//				.peek((eachDish) -> System.out.println("After filter2: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
+//					.peek((eachDish) -> System.out.println("After filter2: " + eachDish.getName() + " / " + eachDish.getIsVegetarian() + " / " + eachDish.getCalories()))
 				.forEach((eachDish) -> System.out.println(eachDish + " / " + eachDish.getCalories())); // Stream<Dish>
 	}
 	

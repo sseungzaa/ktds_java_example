@@ -10,9 +10,9 @@ public class DishStream {
 		// 전체 스트림에서 skip만큼 건너뛰고 나머지를 출력
 		DishList.get()
 				.stream()
-//				.peek((eachDish) -> System.out.println("Before skip: " + eachDish.getName()))
+//					.peek((eachDish) -> System.out.println("Before skip: " + eachDish.getName()))
 				.skip(skip)
-//				.peek((eachDish) -> System.out.println("After skip: " + eachDish.getName()))
+//					.peek((eachDish) -> System.out.println("After skip: " + eachDish.getName()))
 				.forEach((eachDish) -> System.out.println(eachDish));
 	}
 	
@@ -22,9 +22,9 @@ public class DishStream {
 		// 전체 스트림에서 limit만큼만 가져와 출력
 		DishList.get()
 		.stream()
-//		.peek((eachDish) -> System.out.println("Before limit: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("Before limit: " + eachDish.getName()))
 		.limit(limit)
-//		.peek((eachDish) -> System.out.println("After limit: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("After limit: " + eachDish.getName()))
 		.forEach((eachDish) -> System.out.println(eachDish));
 	}
 	
@@ -34,11 +34,11 @@ public class DishStream {
 		// 전체 스트림에서 skip만큼 건너뛰고 나머지에서 limit만큼만 가져와 출력
 		DishList.get()
 		.stream()
-//		.peek((eachDish) -> System.out.println("Before skip&limit: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("Before skip&limit: " + eachDish.getName()))
 		.skip(skip)
-//		.peek((eachDish) -> System.out.println("After skip: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("After skip: " + eachDish.getName()))
 		.limit(limit)
-//		.peek((eachDish) -> System.out.println("After skip&limit: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("After skip&limit: " + eachDish.getName()))
 		.forEach((eachDish) -> System.out.println(eachDish));
 	}
 	
@@ -48,11 +48,11 @@ public class DishStream {
 		// 전체 스트림에서 limit만큼만 가져온 뒤 skip만큼 건너뛰고 나머지를 출력
 		DishList.get()
 		.stream()
-//		.peek((eachDish) -> System.out.println("Before limit&skip: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("Before limit&skip: " + eachDish.getName()))
 		.limit(limit)
-//		.peek((eachDish) -> System.out.println("After limit: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("After limit: " + eachDish.getName()))
 		.skip(skip)
-//		.peek((eachDish) -> System.out.println("After limit&skip: " + eachDish.getName()))
+//			.peek((eachDish) -> System.out.println("After limit&skip: " + eachDish.getName()))
 		.forEach((eachDish) -> System.out.println(eachDish));
 	}
 	
