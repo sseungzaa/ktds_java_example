@@ -10,17 +10,17 @@ public class RecursiveCallExam {
 	
 	/**
 	 *  prev Stack	    now Stack		Push(Forward)     Pop(Backward)
-		main	        printHello() 1	재귀호출 중입니다: 8	  재귀호출이 끝나는 중입니다: 8
-		printHello() 1	printHello() 2	재귀호출 중입니다: 3	  재귀호출이 끝나는 중입니다: 3
-		printHello() 2	printHello() 3	재귀호출 중입니다: 3	  재귀호출이 끝나는 중입니다: 3
-		printHello() 3	printHello() 4	재귀호출 중입니다: 8	  재귀호출이 끝나는 중입니다: 8
-		printHello() 4	printHello() 5	재귀호출 중입니다: 4	  재귀호출이 끝나는 중입니다: 4
-		printHello() 5	printHello() 6	재귀호출 중입니다: 1	  재귀호출이 끝나는 중입니다: 1
-		printHello() 6	printHello() 7	재귀호출 중입니다: 6	  재귀호출이 끝나는 중입니다: 6
-		printHello() 7	printHello() 8	재귀호출 중입니다: 6	  재귀호출이 끝나는 중입니다: 6
-		printHello() 8	printHello() 9	재귀호출 중입니다: 8	  재귀호출이 끝나는 중입니다: 8
-		printHello() 9	printHello() 10	재귀호출 중입니다: 7	  재귀호출이 끝나는 중입니다: 7
-		printHello() 10	printHello() 11	재귀호출 중입니다: 9	  재귀호출이 끝나는 중입니다: 9
+		main	        printHello() 1	재귀 호출 중입니다: 8	  재귀 호출이 끝나는 중입니다: 8
+		printHello() 1	printHello() 2	재귀 호출 중입니다: 3	  재귀 호출이 끝나는 중입니다: 3
+		printHello() 2	printHello() 3	재귀 호출 중입니다: 3	  재귀 호출이 끝나는 중입니다: 3
+		printHello() 3	printHello() 4	재귀 호출 중입니다: 8	  재귀 호출이 끝나는 중입니다: 8
+		printHello() 4	printHello() 5	재귀 호출 중입니다: 4	  재귀 호출이 끝나는 중입니다: 4
+		printHello() 5	printHello() 6	재귀 호출 중입니다: 1	  재귀 호출이 끝나는 중입니다: 1
+		printHello() 6	printHello() 7	재귀 호출 중입니다: 6	  재귀 호출이 끝나는 중입니다: 6
+		printHello() 7	printHello() 8	재귀 호출 중입니다: 6	  재귀 호출이 끝나는 중입니다: 6
+		printHello() 8	printHello() 9	재귀 호출 중입니다: 8	  재귀 호출이 끝나는 중입니다: 8
+		printHello() 9	printHello() 10	재귀 호출 중입니다: 7	  재귀 호출이 끝나는 중입니다: 7
+		printHello() 10	printHello() 11	재귀 호출 중입니다: 9	  재귀 호출이 끝나는 중입니다: 9
 	 */
 	
 	public static void printHello() {
