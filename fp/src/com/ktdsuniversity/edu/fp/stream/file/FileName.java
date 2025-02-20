@@ -6,7 +6,7 @@ public enum FileName {
 	COUNTRIES("countries.csv"),
 	REGIONS("regions.csv"),
 	STATES("states.csv"),
-	SUBREGIONS("subregions.csv");
+	SUB_REGIONS("subregions.csv");
 	
 	
 	public String fileName;

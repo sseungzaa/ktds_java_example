@@ -1,5 +1,8 @@
 package com.ktdsuniversity.edu.fp.stream.file;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class State {
 	private int id;
 	private String name;
@@ -10,6 +13,10 @@ public class State {
 	private String type;
 	private double latitude;
 	private double longitude;
+	// 여기부터 has a 강의 추가 부분
+	private Country countryInfo;
+	private List<City> cities;
+	// 여기까지
 	
 	public State(String[] stateData) {
 		
@@ -40,6 +47,9 @@ public class State {
 		this.type = type;
 		this.latitude = latitude;
 		this.longitude = longitude;
+		// 여기부터 has a 강의 추가 부분
+		this.cities = new ArrayList<>();
+		// 여기까지
 	}
 	
 	public int getId() {
@@ -77,5 +87,23 @@ public class State {
 	public double getLongitude() {
 		return this.longitude;
 	}
-		
+
+	// 여기부터 has a 강의 추가 부분
+	public Country getCountryInfo() {
+		return this.countryInfo;
+	}
+	
+	public List<City> getCities() {
+		return this.cities;
+	}
+
+	public void setCountryInfo(Country countryInfo) {
+		this.countryInfo = countryInfo;
+	}
+
+	public void setCities(List<City> cities) {
+		this.cities = cities;
+	}
+	// 여기까지
+	
 }

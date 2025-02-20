@@ -21,7 +21,6 @@ package first_java_program;
 	}*/
 public class MethodStatement {
 	public static void printHello(String name) {
-		// add 메소드가 하는 일
 		System.out.println(name + ", How are you?");
 	}
 	public static void main(String[] args) {

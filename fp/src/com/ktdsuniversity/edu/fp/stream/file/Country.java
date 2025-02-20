@@ -1,5 +1,8 @@
 package com.ktdsuniversity.edu.fp.stream.file;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Country {
 	private int id;
 	private String name;
@@ -23,6 +26,10 @@ public class Country {
 	private double longitude;
 	private String emoji;
 	private String emojiU;
+	// 여기부터 has a 강의 추가 부분
+	private SubRegion subRegionInfo;
+	private List<State> states;
+	// 여기까지
 	
 	public Country(String[] countryData) {
 		this(
@@ -77,6 +84,9 @@ public class Country {
 		this.longitude = longitude;
 		this.emoji = emoji;
 		this.emojiU = emojiU;
+		// 여기부터 has a 강의 추가 부분
+		this.states = new ArrayList<>();
+		// 여기까지
 	}
 	
 	public int getId() {
@@ -166,5 +176,23 @@ public class Country {
 	public String getEmojiU() {
 		return this.emojiU;
 	}
+
+	// 여기부터 has a 강의 추가 부분
+	public SubRegion getSubRegionInfo() {
+		return this.subRegionInfo;
+	}
+	
+	public List<State> getStates() {
+		return this.states;
+	}
+
+	public void setSubRegionInfo(SubRegion subRegionInfo) {
+		this.subRegionInfo = subRegionInfo;
+	}
+
+	public void setStates(List<State> states) {
+		this.states = states;
+	}
+	// 여기까지
 	
 }

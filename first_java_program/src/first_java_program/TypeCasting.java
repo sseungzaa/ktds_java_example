@@ -1,7 +1,7 @@
 package first_java_program;
 
 /**
- * 묵시적 형변환 실습
+ * 형 변환 실습
  */
 
 public class TypeCasting {

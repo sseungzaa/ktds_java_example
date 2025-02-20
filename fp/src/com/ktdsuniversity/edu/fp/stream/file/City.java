@@ -12,6 +12,9 @@ public class City {
 	private double latitude;
 	private double longitude;
 	private String wikiDataId;
+	// 여기부터 has a 강의 추가 부분
+	private State stateInfo;
+	// 여기까지
 	
 	public City(String[] cityData) {
 		this(
@@ -87,5 +90,15 @@ public class City {
 	public String getWikiDataId() {
 		return this.wikiDataId;
 	}
+
+	// 여기부터 has a 강의 추가 부분
+	public State getStateInfo() {
+		return this.stateInfo;
+	}
+
+	public void setStateInfo(State stateInfo) {
+		this.stateInfo = stateInfo;
+	}
+	// 여기까지
 	
 }

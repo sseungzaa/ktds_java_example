@@ -31,11 +31,11 @@ public class Variables {
 		System.out.println(yesOrNo);
 		
 		boolean isGreatThan = 3 < 1;
-		System.out.println(isGreatThan);
+		System.out.println(isGreatThan); // false
 		
 		char letter = 'B';
-		System.out.println(letter-1);
-		System.out.println( (char) (letter-1) );
+		System.out.println(letter-1); // 65
+		System.out.println( (char) (letter-1) ); // A
 		
 		int hugeNum = 1_000_000_000;
 		long hugeNumber = 3_000_000_000L;

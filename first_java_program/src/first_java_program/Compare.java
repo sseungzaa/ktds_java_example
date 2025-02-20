@@ -34,14 +34,15 @@ public class Compare {
 		
 		// d는 2 또는 5의 배수인가?
 		int d = (int) (Math.random() * 100); // -> 0 ~ 5
-		boolean isMultiple2Or5 = d % 2 == 0 || d % 5 == 0;
+//		boolean isMultiple2Or5 = d % 5 == 0 || d % 2 == 0; <- 비효율
+		boolean isMultiple2Or5 = d % 2 == 0 || d % 5 == 0; // <- 효율 (2의 배수가 더 많기 때문에 앞에)
 		System.out.println(isMultiple2Or5);
 		
 		// son은 parent와 함께 12세 이상 관람가의 영화를 볼 수 있나?
 		int son = 7;
 		int parent = 40;
 		// boolean isAvailable = son >= 12 || parent >=12; <- 비효율
-		boolean isAvailable = parent >=12 || son >= 12; // <- 효율
+		boolean isAvailable = parent >=12 || son >= 12; // <- 효율 (부모의 나이가 12세 이상일 확률이 높기 때문에 앞에)
 		System.out.println(isAvailable);
 		
 		// e는 2 또는 3의 배수이면서 50보다 큰가?
