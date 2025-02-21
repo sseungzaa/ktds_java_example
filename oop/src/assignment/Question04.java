@@ -6,7 +6,7 @@ package assignment;
 */
 
 public class Question04 {
-	public static void primeNum() {
+	public void primeNum() {
 		
 		int count = 0;
 		
@@ -29,6 +29,7 @@ public class Question04 {
 	}
 	
 	public static void main(String args[]) {
-		primeNum();		
+		Question04 ipn = new Question04();
+		ipn.primeNum();		
 	}
 }

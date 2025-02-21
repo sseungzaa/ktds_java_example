@@ -17,7 +17,9 @@ public class Question12 {
 		
 		int remainder = (int) (((double) num2 / num1) * 100);
 		
+		System.out.println(remainder);
 		System.out.println(remainder / 100f );
+		System.out.println(remainder / 100.0);
 	
 	}
 }

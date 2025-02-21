@@ -55,7 +55,7 @@ public class Question03 {
 			
 			cal = sc.next();
 			
-			if (cal.equals("exit")) {
+			if (cal.equalsIgnoreCase("exit")) {
 				System.out.println("계산기 프로그램을 종료합니다.");
 				break;
 			}
@@ -69,6 +69,7 @@ public class Question03 {
 			result = calc(cal, num1 , num2);
 			
 			System.out.println(result);
-		}	
+		}
+		sc.close();
 	}
 }

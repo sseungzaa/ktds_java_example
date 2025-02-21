@@ -85,23 +85,23 @@ public class Assignment {
 		
 		System.out.println("========== 3번 ==========");
 		
-		int[] array2 = new int[10];
+//		int[] array2 = new int[10];
+//		
+//		for (int i = 0; i < array2.length; i++) {
+//			array2[i] = i + 1;
+//		}
+//		
+//		int length = array2.length;
+//		System.out.print("변경 전: ");
+//		printArray(array2);
+//
+//		for (int i = 0; i < length / 2; i++) {
+//			changeValue(array2, i, length - i - 1);
+//		}
+//		System.out.print("\n변경 후: ");
+//		printArray(array2);
 		
-		for (int i = 0; i < array2.length; i++) {
-			array2[i] = i + 1;
-		}
-		
-		int length = array2.length;
-		System.out.print("변경 전: ");
-		printArray(array2);
-
-		for (int i = 0; i < length / 2; i++) {
-			changeValue(array2, i, length - i - 1);
-		}
-		System.out.print("\n변경 후: ");
-		printArray(array2);
-		
-		/* 내가 한 부분
+//		/* 내가 한 부분
 		int[] array2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		
 		for (int i = 0; i < array2.length / 2; i++) {
@@ -121,7 +121,8 @@ public class Assignment {
 		// 배열 순회하며 출력
 		for (int i = 0; i < array2.length; i++) {
 			System.out.println(i + " -> " + array2[i]);
+//			System.out.println(array2);
 		}
-		*/
+//		*/
 	}
 }
