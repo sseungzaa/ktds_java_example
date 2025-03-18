@@ -2,8 +2,8 @@ package com.ktdsuniversity.edu.file;
 
 /**
  * Recursive Call (재귀 호출)
- *  - 메소드가 자신을 다시 호출하는 것.
- *  - a() 메소드 내부에서  a() 메소드를 다시 호출.
+ *  - 메소드가 자신을 다시 호출하는 것
+ *  - a() 메소드 내부에서  a() 메소드를 다시 호출
  */
 
 public class RecursiveCallExam {
@@ -27,7 +27,7 @@ public class RecursiveCallExam {
 		int randomNumber = (int)(Math.random() * 10); // 0 ~ 9
 		System.out.println("재귀 호출 중입니다: " + randomNumber);
 		
-		// 재귀 호출의 종료는 printHello()를 다시 호출하지 않는 것.
+		// 재귀 호출의 종료는 printHello()를 다시 호출하지 않는 것
 		if (randomNumber < 9) {
 			printHello();
 		}
@@ -35,21 +35,21 @@ public class RecursiveCallExam {
 	}
 	
 	/**
-	 * startNumber에서 0까지 재귀 호출을 이용해서 출력한다.
+	 * startNumber에서 0까지 재귀 호출을 이용해서 출력
 	 * @param startNumber
 	 */
 	public static void printNumbers(int startNumber) {
-		// Call stack Push 할 때 실행
+		// Call stack Push할 때 실행
 		System.out.println("현재 번호: " + startNumber);
 		if (startNumber > 0) {
 			printNumbers(startNumber - 1);
 		}
-		// Call stack Pop 할 때 실행
+		// Call stack Pop할 때 실행
 		System.out.println("현재 번호 출력 끝: " + startNumber);
 	}
 	
 	/**
-	 * startNumber 부터 1 까지 모두 더한 값을 조회. (재귀 호출)
+	 * startNumber부터 1까지 모두 더한 값을 조회 (재귀 호출)
 	 * @param startNumber
 	 * @return
 	 */
