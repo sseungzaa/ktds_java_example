@@ -1,6 +1,6 @@
 package linkedlist.singly;
 
-public class SinglyLinkedList {
+public class DoublyLinkedList {
 	private Node head;
 	private Node tail;
 	private int length;
@@ -94,7 +94,7 @@ public class SinglyLinkedList {
 	}
 	
 	public static void main(String[] args) {
-		SinglyLinkedList sll = new SinglyLinkedList();
+		DoublyLinkedList sll = new DoublyLinkedList();
 //		sll.unshift(1); // tail
 //		sll.unshift(2);
 //		sll.unshift(3);
